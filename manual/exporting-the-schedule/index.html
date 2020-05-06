@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Exporting the Schedule - LibreTime</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../_css/term.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Exporting the Schedule";
+    var mkdocs_page_input_path = "manual/exporting-the-schedule/index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> LibreTime</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../">What is LibreTime?</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../features/">Features</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../faq/">F.A.Q.</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../rights-and-royalties/">Rights and Royalties</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Installation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../install/">Install</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preparing-the-server/">Preparing the Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../setting-the-server-time/">Setting the Server Time</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../host-configuration/">Host Configuration</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Using LibreTime</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../on-air-in-60-seconds/">On Air in 60 seconds!</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../getting-started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../tutorials/">Tutorials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">The Main Menus</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../upload/">Upload</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dashboard/">Dashboard</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../tracks/">Tracks</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../playlists/">Playlists</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../smartblocks/">Smart Blocks</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../webstreams/">Webstreams</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../podcasts/">Podcasts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../my-podcast/">My Podcast</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../radio-page/">Radio Page</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../calendar/">Calendar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../widgets/">Widgets</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Settings</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../general/">General</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../users/">Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../stream-settings/">Streams</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../status/">Status</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../listener-stats/">Analytics</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../listen/">Listen</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">The Analytics Menu</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../history/">Playout History</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../history-templates/">History Templates</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../listener-stats/">Listener Stats</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">LibreTime in the Studio</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../preparing-media-for-ingest/">Preparing Media for Ingest</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../live-shows-with-mixxx/">Live Shows with Mixxx</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../smartphone-journalism/">Smartphone Journalism</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../icecast-and-shoutcast/">Icecast and SHOUTcast</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Administration</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../backing-up-the-server/">Backing Up the Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../media-folders/">Media Folders</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../upgrading/">Upgrading</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Advanced Configuration</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../icecast-handover/">Icecast Handover</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../promoting-your-station/">Promoting Your Station</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../stream-player-for-your-website/">Stream Player for Your Website</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Exporting the Schedule</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface-customization/">Interface Customization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface-localization/">Interface Localization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../airtime-api-authentication/">LibreTime API Authentication</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../secure-login-with-ssl/">Secure Login with SSL or TLS</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../icecast-statistics-with-piwik/">Icecast Statistics with Piwik</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../freeipa/">FreeIPA Authentication</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Development</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../testing/">Testing</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../database/">Database</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../vagrant/">Vagrant</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../translating/">Translating</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../documentation/">Documentation</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Appendix</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../hd-audio-models/">HD Audio Models</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../about-this-manual/">About This Manual</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../uninstall/">Uninstall LibreTime</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">LibreTime</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Advanced Configuration &raquo;</li>
+        
+      
+    
+    <li>Exporting the Schedule</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/LibreTime/libretime/edit/master/docs/manual/exporting-the-schedule/index.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>LibreTime has a feature which enables your station's show and schedule information to be displayed on remote websites. This feature is included in LibreTime because you would not usually invite the general public to access your LibreTime server directly. If you had very large numbers of people requesting data from the LibreTime server at once, the burst of network traffic might overload the server, potentially disrupting your broadcasts. If carried out maliciously, this network overload is known as a <em>denial of service attack</em>.</p>
+<p>Instead, your public-facing web server can retrieve the schedule information from the LibreTime API. This information can then be displayed on your broadcast station or affiliate websites by a content management system, such as Sourcefabric's <strong>Newscoop</strong> (<a href="http://newscoop.sourcefabric.org/">http://newscoop.sourcefabric.org/</a>). It can be presented using Javascript widgets and styled with CSS, in any format that you require. The <strong>Broadcaster</strong> theme for Newscoop (<a href="https://github.com/newscoop/theme-Broadcaster">https://github.com/newscoop/theme-Broadcaster</a>) integrates these widgets with ready-to-use styles.</p>
+<p>There are two kinds of information that can be retrieved remotely from the LibreTime API without authentication; the metadata for the current show plus the following show (live-info), or the schedule for the current week and the week ahead (week-info). The week-info metadata includes show names, times, and individual show URLs on your public website. That way, the audience for your station can click through from the schedule information to find out more about a particular show, or download a previous show recording that you might have made available.</p>
+<p>If your LibreTime server was accessible at https://libretime.example.com the live show information could be retrieved by your web server using this URL:</p>
+<pre class="codehilite"><code>https://libretime.example.com/api/live-info/?callback</code></pre>
+
+
+<p>The comma-separated text metadata returned to your web server might be something like this:</p>
+<pre class="codehilite"><code>({&quot;env&quot;:&quot;production&quot;,
+&quot;schedulerTime&quot;:&quot;2013-07-03 14:07:31&quot;,
+
+&quot;previous&quot;:{&quot;name&quot;:&quot;Earth, Wind &amp;amp; Fire - Boogie Wonderland&quot;,
+&quot;starts&quot;:&quot;2013-07-01 22:53:00&quot;,
+&quot;ends&quot;:&quot;2013-07-01 22:55:00&quot;,
+&quot;type&quot;:&quot;track&quot;},
+&quot;current&quot;:{&quot;name&quot;:&quot;Deodato - Also Sprach Zarathustra&quot;,
+&quot;starts&quot;:&quot;2013-07-03 13:07:06&quot;,
+&quot;ends&quot;:&quot;2013-07-03 13:16:05&quot;,
+&quot;media_item_played&quot;:true,
+&quot;record&quot;:0,
+&quot;type&quot;:&quot;track&quot;},
+
+&quot;next&quot;:{&quot;id&quot;:8,
+&quot;instance_id&quot;:10,
+&quot;name&quot;:&quot;Rock Show&quot;,
+&quot;url&quot;:&quot;https:\/\/rock.example.com\/&quot;,
+&quot;start_timestamp&quot;:&quot;2013-07-03 14:00:00&quot;,
+&quot;end_timestamp&quot;:&quot;2013-07-03 15:00:00&quot;,
+&quot;starts&quot;:&quot;2013-07-03 14:00:00&quot;,
+&quot;ends&quot;:&quot;2013-07-03 15:00:00&quot;,
+&quot;record&quot;:0,
+&quot;type&quot;:&quot;show&quot;},
+
+&quot;currentShow&quot;:[{&quot;start_timestamp&quot;:&quot;2013-07-03 14:07:00&quot;,
+&quot;0&quot;:&quot;2013-07-03 13:07:00&quot;,
+&quot;end_timestamp&quot;:&quot;2013-07-03 15:00:00&quot;,
+&quot;1&quot;:&quot;2013-07-03 14:00:00&quot;,
+&quot;name&quot;:&quot;Funk Show&quot;,
+&quot;2&quot;:&quot;Funk Show&quot;,
+&quot;id&quot;:7,
+&quot;3&quot;:7,
+&quot;instance_id&quot;:9,&quot;4&quot;:9,
+&quot;record&quot;:0,
+&quot;5&quot;:0,
+&quot;url&quot;:&quot;https:\/\/funk.example.com\/&quot;,
+&quot;6&quot;:&quot;&quot;,
+&quot;starts&quot;:&quot;2013-07-03 14:07:00&quot;,
+&quot;7&quot;:&quot;2013-07-03 13:07:00&quot;,
+&quot;ends&quot;:&quot;2013-07-03 15:00:00&quot;,
+&quot;8&quot;:&quot;2013-07-03 14:00:00&quot;}],
+
+&quot;nextShow&quot;:[{&quot;id&quot;:8,
+&quot;instance_id&quot;:10,
+&quot;name&quot;:&quot;Rock Show&quot;,
+&quot;url&quot;:&quot;https:\/\/rock.example.com\/&quot;,
+&quot;start_timestamp&quot;:&quot;2013-07-03 15:00:00&quot;,
+&quot;end_timestamp&quot;:&quot;2013-07-03 16:00:00&quot;,
+&quot;starts&quot;:&quot;2013-07-03 15:00:00&quot;,
+&quot;ends&quot;:&quot;2013-07-03 16:00:00&quot;,
+&quot;record&quot;:0,
+&quot;type&quot;:&quot;show&quot;}],
+
+&quot;timezone&quot;:&quot;BST&quot;,
+&quot;timezoneOffset&quot;:&quot;3600&quot;,
+&quot;AIRTIME_API_VERSION&quot;:&quot;1.1&quot;})</code></pre>
+
+
+<p>The information for the current week's schedule could be retrieved using the URL:</p>
+<pre class="codehilite"><code>https://libretime.example.com/api/week-info/?callback</code></pre>
+
+
+<p>In this case, the metadata returned would be in a different format from the above example, something like the following. To keep the example short, this particular schedule export only contains four shows on a Monday. A full weekly schedule export would contain a great deal more text.</p>
+<pre class="codehilite"><code>({&quot;monday&quot;:[
+
+{&quot;start_timestamp&quot;:&quot;2013-07-01 12:05:00&quot;,
+&quot;end_timestamp&quot;:&quot;2013-07-01 13:00:00&quot;,
+&quot;name&quot;:&quot;Elvis Show&quot;,
+&quot;id&quot;:2,
+&quot;instance_id&quot;:2,
+&quot;record&quot;:0,
+&quot;url&quot;:&quot;https:\/\/elvis.example.com\/&quot;,
+&quot;starts&quot;:&quot;2013-07-01 12:05:00&quot;,
+&quot;ends&quot;:&quot;2013-07-01 13:00:00&quot;},
+
+{&quot;start_timestamp&quot;:&quot;2013-07-01 13:00:00&quot;,
+&quot;end_timestamp&quot;:&quot;2013-07-01 14:00:00&quot;,
+&quot;name&quot;:&quot;News&quot;,
+&quot;id&quot;:3,
+&quot;instance_id&quot;:4,
+&quot;record&quot;:0,
+&quot;url&quot;:&quot;https:\/\/news.example.com\/&quot;,
+&quot;starts&quot;:&quot;2013-07-01 13:00:00&quot;,
+&quot;ends&quot;:&quot;2013-07-01 14:00:00&quot;},
+
+{&quot;start_timestamp&quot;:&quot;2013-07-01 14:00:00&quot;,
+&quot;end_timestamp&quot;:&quot;2013-07-01 15:00:00&quot;,
+&quot;name&quot;:&quot;Funk Show&quot;,
+&quot;id&quot;:4,
+&quot;instance_id&quot;:6,
+&quot;record&quot;:0,
+&quot;url&quot;:&quot;https:\/\/funk.example.com\/&quot;,
+&quot;starts&quot;:&quot;2013-07-01 14:00:00&quot;,
+&quot;ends&quot;:&quot;2013-07-01 15:00:00&quot;},
+
+{&quot;start_timestamp&quot;:&quot;2013-07-01 15:00:00&quot;,
+&quot;end_timestamp&quot;:&quot;2013-07-01 17:30:00&quot;,
+&quot;name&quot;:&quot;Rock Show&quot;,
+&quot;id&quot;:5,
+&quot;instance_id&quot;:7,
+&quot;record&quot;:0,
+&quot;url&quot;:&quot;https:\/\/rock.example.com\/&quot;,
+&quot;starts&quot;:&quot;2013-07-01 15:00:00&quot;,
+&quot;ends&quot;:&quot;2013-07-01 17:30:00&quot;},
+
+],
+
+&quot;tuesday&quot;:[],
+&quot;wednesday&quot;:[],
+&quot;thursday&quot;:[],
+&quot;friday&quot;:[],
+&quot;saturday&quot;:[],
+&quot;sunday&quot;:[],
+&quot;AIRTIME_API_VERSION&quot;:&quot;1.1&quot;})</code></pre>
+
+
+<p>If you see the message <em>You are not allowed to access this resource</em> when attempting to display schedule information in your web browser, log in to the LibreTime administration interface, click <em>System</em> in the main menu, then <em>Preferences</em>. Set <strong>Allow Remote Websites To Access "Schedule" Info?</strong> to <strong>Enabled</strong>, click the <strong>Save</strong> button, then refresh the browser window opened on the schedule export URL. If you do not wish to make schedule information available to the public, set this option to <strong>Disabled</strong> instead.</p>
+<p><img alt="" src="static/Screenshot497-System_preferences_240.png" /></p>
+<h2 id="caching-schedule-information">Caching schedule information</h2>
+<p>If the LibreTime server is behind a firewall, or you want to protect the LibreTime server from large numbers of schedule requests, you may wish to cache the schedule information on a public-facing or intermediate server. You can then create a firewall rule that only allows the schedule server to connect to the LibreTime server, in addition to any remote users of the LibreTime web interface.</p>
+<p>Your system administrator can set up schedule caching on a standard Apache and PHP enabled web server with the <em>curl</em> program installed, using the following steps:</p>
+<ol>
+<li>
+<p>Create a shell script on the schedule server (schedule.example.com) that polls the remote LibreTime server (libretime.example.com), and writes the metadata returned into a pair of local temporary files:</p>
+<p>sudo nano /usr/local/bin/libretime-schedule.sh</p>
+</li>
+</ol>
+<p>The content of this file should be like the following script, replacing libretime.example.com with the name of your LibreTime server:</p>
+<pre class="codehilite"><code class="language-sh linenums">#!/bin/sh
+
+curl -s &quot;https://libretime.example.com/api/live-info/?callback=***&quot; &gt; /tmp/live-info
+
+curl -s &quot;https://libretime.example.com/api/week-info/?callback=***&quot; &gt; /tmp/week-info</code></pre>
+
+
+<ol>
+<li>
+<p>Make the script executable:</p>
+<p>sudo chmod +x /usr/local/bin/libretime-schedule.sh</p>
+</li>
+<li>
+<p>Create an Apache VirtualHost configuration for the schedule server:</p>
+<p>sudo nano /etc/apache2/sites-available/schedule</p>
+</li>
+</ol>
+<p>containing a definition like the following, replacing <em>schedule.example.com</em> with the name of your schedule server:</p>
+<pre class="codehilite"><code>&lt;VirtualHost *:80&gt;
+   ServerName schedule.example.com
+   DocumentRoot /var/www/schedule/
+&lt;/VirtualHost&gt;</code></pre>
+
+
+<ol>
+<li>
+<p>In the schedule server's DocumentRoot folder, create the folders <em>api/live-info/</em> and <em>api/week-info/</em></p>
+<p>sudo mkdir -p /var/www/schedule/api/live-info/
+sudo mkdir -p /var/www/schedule/api/week-info/</p>
+</li>
+<li>
+<p>Create an index.php file in the <em>api/live-info/</em> folder:</p>
+<p>sudo nano /var/www/schedule/api/live-info/index.php</p>
+</li>
+</ol>
+<p>containing the following code:</p>
+<pre class="codehilite"><code>&lt;?php
+$filename = '/tmp/live-info';  // define here the path and name of uploaded live-info file
+
+header('Content-Type: text/javascript');
+header(&quot;Expires: Thu, 01 Jan 1970 00:00:00 GMT&quot;);
+header(&quot;Cache-Control: no-store, no-cache, must-revalidate&quot;);
+
+$callback = empty($_GET['callback']) ? null : $_GET['callback'];
+$content = file_get_contents($filename);
+$content = str_replace('***', $callback, $content);
+echo $content;
+?&gt;</code></pre>
+
+
+<ol>
+<li>
+<p>Create an index.php file in the <em>api/week-info/</em> folder:</p>
+<p>sudo nano /var/www/schedule/api/week-info/index.php</p>
+</li>
+</ol>
+<p>containing the following code:</p>
+<pre class="codehilite"><code>&lt;?php
+$filename = '/tmp/week-info';  // define here the path and name of uploaded week-info file
+
+header('Content-Type: text/javascript');
+header(&quot;Expires: Thu, 01 Jan 1970 00:00:00 GMT&quot;);
+header(&quot;Cache-Control: no-store, no-cache, must-revalidate&quot;);
+
+$callback = empty($_GET['callback']) ? null : $_GET['callback'];
+$content = file_get_contents($filename);
+$content = str_replace('***', $callback, $content);
+echo $content;
+?&gt;</code></pre>
+
+
+<ol>
+<li>
+<p>Enable the new configuration and reload the Apache web server:</p>
+<p>sudo a2ensite schedule
+sudo /etc/init.d/apache2 reload</p>
+</li>
+<li>
+<p>Create a cron job to run the shell script each minute:</p>
+<p>sudo nano /etc/cron.d/libretime-schedule</p>
+</li>
+</ol>
+<p>containing the line:</p>
+<pre class="codehilite"><code>* * * * * www-data /usr/local/bin/libretime-schedule.sh</code></pre>
+
+
+<p>The schedule server will now be serving the same show information as the LibreTime server, with a cache lifetime of one minute. You can adjust the cache lifetime by altering the frequency of the cron job that polls the LibreTime server.</p>
+<h2 id="pushing-schedule-information-via-ftp-or-ssh">Pushing schedule information via FTP or SSH</h2>
+<p>If there is no inbound access to the LibreTime server at all, an FTP script can be used to push cached schedule data from LibreTime to an external web server. The standard ftp command should be available on the LibreTime server and the external web server should have a suitably restricted FTP account set up. After following steps 1 and 2 above to export schedule data to a pair of temporary files on the LibreTime server, create a new script on the LibreTime server to automatically make the upload:</p>
+<pre class="codehilite"><code>sudo nano /usr/local/bin/upload-schedule-data.sh</code></pre>
+
+
+<p>Replace host, user and password values with appropriate values for your external web server:</p>
+<pre class="codehilite"><code class="language-sh linenums">#!/bin/sh
+HOST='website.example.com'
+USER='ftp_user'
+PASSWD='ftp_password'
+
+ftp -n -v $HOST &lt;&lt; EOT
+user $USER $PASSWD
+ascii
+prompt
+put /tmp/airtime-week-info
+put /tmp/airtime-live-info
+bye
+EOT</code></pre>
+
+
+<p>Then make the new script executable and create a cron job to launch it every minute, as in step 8 above. Steps 3 to 7 above should be carried out on the external web server so that it can convert the two temporary files uploaded via FTP into public schedule data.</p>
+<p>If you have secure shell access (SSH) to the remote web server, you could write a script to use the secure copy command (scp) instead of ftp.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../interface-customization/" class="btn btn-neutral float-right" title="Interface Customization">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../stream-player-for-your-website/" class="btn btn-neutral" title="Stream Player for Your Website"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/LibreTime/libretime/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../stream-player-for-your-website/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../interface-customization/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

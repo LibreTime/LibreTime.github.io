@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Icecast Statistics with Piwik - LibreTime</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../_css/term.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Icecast Statistics with Piwik";
+    var mkdocs_page_input_path = "manual/icecast-statistics-with-piwik/index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> LibreTime</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../">What is LibreTime?</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../features/">Features</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../faq/">F.A.Q.</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../rights-and-royalties/">Rights and Royalties</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Installation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../install/">Install</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preparing-the-server/">Preparing the Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../setting-the-server-time/">Setting the Server Time</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../host-configuration/">Host Configuration</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Using LibreTime</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../on-air-in-60-seconds/">On Air in 60 seconds!</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../getting-started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../tutorials/">Tutorials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">The Main Menus</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../upload/">Upload</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dashboard/">Dashboard</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../tracks/">Tracks</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../playlists/">Playlists</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../smartblocks/">Smart Blocks</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../webstreams/">Webstreams</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../podcasts/">Podcasts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../my-podcast/">My Podcast</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../radio-page/">Radio Page</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../calendar/">Calendar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../widgets/">Widgets</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Settings</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../general/">General</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../users/">Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../stream-settings/">Streams</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../status/">Status</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../listener-stats/">Analytics</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../listen/">Listen</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">The Analytics Menu</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../history/">Playout History</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../history-templates/">History Templates</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../listener-stats/">Listener Stats</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">LibreTime in the Studio</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../preparing-media-for-ingest/">Preparing Media for Ingest</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../live-shows-with-mixxx/">Live Shows with Mixxx</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../smartphone-journalism/">Smartphone Journalism</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../icecast-and-shoutcast/">Icecast and SHOUTcast</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Administration</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../backing-up-the-server/">Backing Up the Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../media-folders/">Media Folders</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../upgrading/">Upgrading</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Advanced Configuration</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../icecast-handover/">Icecast Handover</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../promoting-your-station/">Promoting Your Station</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../stream-player-for-your-website/">Stream Player for Your Website</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../exporting-the-schedule/">Exporting the Schedule</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface-customization/">Interface Customization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface-localization/">Interface Localization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../airtime-api-authentication/">LibreTime API Authentication</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../secure-login-with-ssl/">Secure Login with SSL or TLS</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Icecast Statistics with Piwik</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../freeipa/">FreeIPA Authentication</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Development</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../testing/">Testing</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../database/">Database</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../vagrant/">Vagrant</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../translating/">Translating</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../documentation/">Documentation</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Appendix</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../hd-audio-models/">HD Audio Models</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../about-this-manual/">About This Manual</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../uninstall/">Uninstall LibreTime</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">LibreTime</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Advanced Configuration &raquo;</li>
+        
+      
+    
+    <li>Icecast Statistics with Piwik</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/LibreTime/libretime/edit/master/docs/manual/icecast-statistics-with-piwik/index.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Piwik (<a href="http://piwik.org/">http://piwik.org/</a>) is an open source web analytics platform which supports Icecast's log format, in Piwik version 2.0 or later. For your convenience, packages of Piwik for Debian and Ubuntu are provided in the <a href="http://apt.sourcefabric.org">http://apt.sourcefabric.org</a> repository. If you have already configured your LibreTime server for this repository, you can install the <strong>piwik</strong> package and its dependencies with the command:</p>
+<pre class="codehilite"><code>sudo apt-get install piwik php5-geoip php5-cli mysql-server</code></pre>
+
+
+<p>For security reasons, you should set a strong root password for the MySQL server. If you have not set a MySQL root password already, you should be promoted to do this during the installation of the <strong>mysql-server</strong> package.</p>
+<h2 id="database-and-web-server-configuration">Database and web server configuration</h2>
+<p>Piwik uses a MySQL database which must be created manually before you can use the Piwik web interface.</p>
+<ol>
+<li>
+<p>Log into the database management system with the root password that you set for the MySQL server:</p>
+<p>mysql -uroot -p
+Enter password:</p>
+</li>
+</ol>
+<p>The server should respond with:</p>
+<pre class="codehilite"><code>Welcome to the MySQL monitor.  Commands end with ; or \g.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql&gt;</code></pre>
+
+
+<ol>
+<li>
+<p>At the mysql command prompt, create a database named <em>piwik</em> with the command:</p>
+<p>CREATE DATABASE <code>piwik</code> /<em>!40100 DEFAULT CHARACTER SET utf8 </em>/;</p>
+</li>
+<li>
+<p>Create a MySQL user and a strong password with access to the database previously created:</p>
+<p>CREATE USER piwik@localhost IDENTIFIED BY 'my-strong-password';
+GRANT ALL PRIVILEGES ON piwik.<em> to piwik@localhost;
+GRANT FILE ON </em>.* TO piwik@localhost;
+QUIT</p>
+</li>
+<li>
+<p>Create a virtual host for the piwik web interface in <em>/etc/apache2/sites-available/piwik-vhost.conf</em> setting the <em>ServerName</em> as appropriate for your server:</p>
+<p><VirtualHost *:80>
+   ServerName stats.example.com
+   DocumentRoot /usr/share/piwik
+   Include "conf.d/piwik.conf"
+</VirtualHost></p>
+</li>
+<li>
+<p>Enable the virtual host and reload the web server:</p>
+<p>sudo a2ensite pwiki-vhost.conf
+sudo invoke-rc.d apache2 reload</p>
+</li>
+<li>
+<p>Open the <em>ServerName</em> that you set for Piwik in your browser. You should see the Piwik setup pages. Provide the MySQL database and Piwik <em>Super User</em> details when requested. If you intended to use Piwik for Icecast statistics only, you can skip the step <em>JavaScript Tracking Code</em>.</p>
+</li>
+</ol>
+<p><img alt="" src="static/Screenshot550-Pwik_setup.png" /></p>
+<ol>
+<li>
+<p>Uncomment the last line in the crontab file <em>/etc/cron.d/piwik</em> and set your Piwik <em>ServerName</em> to enable automatic archiving every five minutes:</p>
+<p>5 * <em> * </em> www-data [ -e /usr/share/piwik/misc/cron/archive.php ] 
+&amp;&amp; [ -x /usr/bin/php ] 
+&amp;&amp; /usr/bin/php /usr/share/piwik/misc/cron/archive.php 
+-- "url=http://stats.example.com/" &gt;/dev/null 2&gt;&amp;1</p>
+</li>
+</ol>
+<p>See <a href="http://piwik.org/docs/">http://piwik.org/docs/</a> for more details of Piwik installation and configuration.</p>
+<h2 id="configure-piwik-for-geolocation">Configure Piwik for geolocation</h2>
+<p>By default, Piwik uses browser language settings to guess the countries in which your station's audience is physically located. In order to satisfy broadcast regulators and music royalty collection societies, a more accurate method is required, based on the location of individual IP addresses.</p>
+<ol>
+<li>
+<p>Edit the file <em>/etc/php5/apache2/conf.d/20-geoip.ini</em> to set the path to your Piwik installation:</p>
+<p>extension=geoip.so
+geoip.custom_directory=/usr/share/piwik/misc</p>
+</li>
+</ol>
+<p>Then restart the web server for the change to take effect:</p>
+<pre class="codehilite"><code>sudo invoke-rc.d apache2 restart</code></pre>
+
+
+<ol>
+<li>
+<p>Download GeoLite data from MaxMind's website <a href="http://dev.maxmind.com/geoip/legacy/geolite/">http://dev.maxmind.com/geoip/legacy/geolite/</a> under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>, for example:</p>
+<p>wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz</p>
+</li>
+<li>
+<p>Unzip and set permissions on the data file, then move it to the <em>misc</em> directory under the Piwik install directory and rename it to <em>GeoIPCity.dat</em> :</p>
+<p>gunzip GeoLiteCity.dat.gz
+chmod 644 GeoLiteCity.dat
+sudo mv GeoLiteCity.dat /usr/share/piwik/misc/GeoIPCity.dat</p>
+</li>
+<li>
+<p>In the Piwik web interface click <strong>Settings</strong> in the top right corner, then <strong>Geolocation</strong> in the left side menu. Change the setting from <em>Default</em> to <em>GeoIP (PECL)</em> .</p>
+</li>
+<li>
+<p>Optionally, configure <em>Setup automatic updates of GeoIP databases</em> at the end of the Geolocation page.</p>
+</li>
+</ol>
+<h2 id="importing-an-icecast-log-file">Importing an Icecast log file</h2>
+<p>In addition to the JavaScript tracking code used for web analytics, Piwik includes a Python script which can import a server log file directly. This script accepts the parameter <em>--log-format-name=icecast2</em> which enables support for the connection duration field logged by Icecast when a client disconnects. It is this field which enables stations to track the duration of individual audience connections, and calculate both the average connection duration and the 'aggregate tuning hours' figure required by some broadcast regulators.</p>
+<p>For an Icecast log file at <em>/var/log/icecast2/access.log</em> you can run the script as follows:</p>
+<pre class="codehilite"><code>python /usr/share/piwik/misc/log-analytics/import_logs.py --show-progress 
+--url=http://stats.example.com --idsite=1 --recorders=8 --enable-http-errors 
+--log-format-name=icecast2 --strip-query-string /var/log/icecast2/access.log</code></pre>
+
+
+<p>where the parameters are:</p>
+<pre class="codehilite"><code>--url=http://stats.example.com</code></pre>
+
+
+<p><em>The ServerName of your Piwik installation.</em></p>
+<pre class="codehilite"><code>--idsite=1</code></pre>
+
+
+<p><em>Number of the default site configured in Piwik.</em></p>
+<pre class="codehilite"><code>--recorders=8</code></pre>
+
+
+<p><em>How many threads to use while parsing the log file. To begin with, set this value to the number of CPU cores you can spare on the Piwik server.</em></p>
+<pre class="codehilite"><code>--enable-http-errors</code></pre>
+
+
+<p><em>Collect statistics for errors, such as stream links not found.</em></p>
+<pre class="codehilite"><code>--strip-query-string</code></pre>
+
+
+<p><em>Used because any characters requested by the client after the Icecast mounpoint URL can confuse the statistics.</em></p>
+<p>If the Piwik server is remote, you can use an additional parameter <em>--token_auth=</em> to authenticate the request. You can find the token to use for your installation by logging in to Piwik and clicking <strong>API</strong> in the main navigation menu at the top of the page. Further details of the import script are shown at <a href="http://piwik.org/docs/log-analytics-tool-how-to/" class="uri" class="moz-txt-link-freetext" title="http://apt.sourcefabric.org">http://piwik.org/docs/log-analytics-tool-how-to/</a></p>
+<p>The script will report the number of records processed and the time that has been required to parse the Icecast log file. If the import script is taking too long to execute, there are performance and configuration tips in the <a href="https://github.com/piwik/piwik/blob/master/misc/log-analytics/README.md" class="uri" class="moz-txt-link-freetext">https://github.com/piwik/piwik/blob/master/misc/log-analytics/README.md</a> file.</p>
+<p>Open the Piwik dashboard in your browser, and you should now see a summary of the imported data, including the most popular streams (listed under <em>Entry Pages</em>), <em>Visits by Server Time</em>, <em>Referrer Websites</em> and a <em>Visitor Map</em>.</p>
+<p><img alt="" src="static/Screenshot551-Piwik_map.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../freeipa/" class="btn btn-neutral float-right" title="FreeIPA Authentication">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../secure-login-with-ssl/" class="btn btn-neutral" title="Secure Login with SSL or TLS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/LibreTime/libretime/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../secure-login-with-ssl/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../freeipa/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

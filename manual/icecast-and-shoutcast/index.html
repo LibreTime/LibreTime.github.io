@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Icecast and SHOUTcast - LibreTime</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../_css/term.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Icecast and SHOUTcast";
+    var mkdocs_page_input_path = "manual/icecast-and-shoutcast/index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> LibreTime</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../">What is LibreTime?</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../features/">Features</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../faq/">F.A.Q.</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../rights-and-royalties/">Rights and Royalties</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Installation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../install/">Install</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preparing-the-server/">Preparing the Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../setting-the-server-time/">Setting the Server Time</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../host-configuration/">Host Configuration</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Using LibreTime</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../on-air-in-60-seconds/">On Air in 60 seconds!</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../getting-started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../tutorials/">Tutorials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">The Main Menus</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../upload/">Upload</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dashboard/">Dashboard</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../tracks/">Tracks</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../playlists/">Playlists</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../smartblocks/">Smart Blocks</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../webstreams/">Webstreams</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../podcasts/">Podcasts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../my-podcast/">My Podcast</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../radio-page/">Radio Page</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../calendar/">Calendar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../widgets/">Widgets</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Settings</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../general/">General</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../users/">Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../stream-settings/">Streams</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../status/">Status</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../listener-stats/">Analytics</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../listen/">Listen</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">The Analytics Menu</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../history/">Playout History</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../history-templates/">History Templates</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../listener-stats/">Listener Stats</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">LibreTime in the Studio</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../preparing-media-for-ingest/">Preparing Media for Ingest</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../live-shows-with-mixxx/">Live Shows with Mixxx</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../smartphone-journalism/">Smartphone Journalism</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Icecast and SHOUTcast</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Administration</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../backing-up-the-server/">Backing Up the Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../media-folders/">Media Folders</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../upgrading/">Upgrading</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Advanced Configuration</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../icecast-handover/">Icecast Handover</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../promoting-your-station/">Promoting Your Station</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../stream-player-for-your-website/">Stream Player for Your Website</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../exporting-the-schedule/">Exporting the Schedule</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface-customization/">Interface Customization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface-localization/">Interface Localization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../airtime-api-authentication/">LibreTime API Authentication</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../secure-login-with-ssl/">Secure Login with SSL or TLS</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../icecast-statistics-with-piwik/">Icecast Statistics with Piwik</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../freeipa/">FreeIPA Authentication</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Development</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../testing/">Testing</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../database/">Database</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../vagrant/">Vagrant</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../translating/">Translating</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../documentation/">Documentation</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Appendix</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../hd-audio-models/">HD Audio Models</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../about-this-manual/">About This Manual</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../uninstall/">Uninstall LibreTime</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">LibreTime</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>LibreTime in the Studio &raquo;</li>
+        
+      
+    
+    <li>Icecast and SHOUTcast</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/LibreTime/libretime/edit/master/docs/manual/icecast-and-shoutcast/index.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>LibreTime supports direct connection to two popular streaming media servers, the open source <strong>Icecast</strong> (<a href="http://www.icecast.org">http://www.icecast.org</a>) and the proprietary <strong>SHOUTcast</strong> (<a href="http://www.shoutcast.com">http://www.shoutcast.com</a>). Apart from the software license, the main difference between these two servers is that Icecast supports simultaneous MP3, AAC, Ogg Vorbis or Ogg Opus streaming from LibreTime, whereas SHOUTcast supports MP3 and AAC streams but not Ogg Vorbis or Opus. The royalty-free Ogg Vorbis format has the advantage of better sound quality than MP3 at lower bitrates, which has a direct impact on the amount of bandwidth that your station will require to serve the same number of listeners. Ogg Opus also benefits from good sound quality at low bitrates, with the added advantage of lower latency than other streaming formats. Opus is now an IETF standard (<a href="http://tools.ietf.org/html/rfc6716">http://tools.ietf.org/html/rfc6716</a>) and requires Icecast 2.4 or later to be installed on the streaming server.</p>
+<p>Ogg Vorbis playback is supported in <strong>Mozilla Firefox</strong>, <strong>Google Chrome</strong> and <strong>Opera</strong> browsers, via <strong>jPlayer</strong> (<a href="http://jplayer.org/">http://jplayer.org/</a>), and is also supported in several popular media players, including VideoLAN Client, also known as VLC (<a href="http://www.videolan.org/vlc/">http://www.videolan.org/vlc/</a>). (See the chapter <em>Stream player for your website</em> on how to deliver <strong>jPlayer</strong> to your audience). Ogg Opus is relatively new and is supported natively in the very latest browsers, such as Mozilla Firefox 25.0, and media players including VLC 2.0.4 or later.</p>
+<p>Streaming MP3 below a bitrate of 128kbps is not recommended for music, because of a perceptible loss of high audio frequencies in the broadcast playout. A 96kbps or 64kbps MP3 stream may be acceptable for voice broadcasts if there is a requirement for compatibility with legacy hardware playback devices which do not support Ogg Vorbis or Opus streams.</p>
+<p>Because LibreTime supports simultaneous streaming in multiple formats, it is possible to offer one or more streams via your website, and another independent stream for direct connection from hardware players. You can test whether Ogg streams sound better at low bitrates for yourself, by using the <strong>LISTEN</strong> button in LibreTime's <strong>Master Panel</strong> to switch between streaming formats.</p>
+<p>Conversely, you may have a music station which wants to stream at 160kbps or 192kbps to offer a quality advantage over stations streaming at 128kbps or less. Since Ogg, AAC and MP3 formats use lossy compression, listeners will only hear the benefit of higher streaming bitrates if the media files in the LibreTime storage server are encoded at an equivalent bitrate, or higher.</p>
+<h2 id="utf-8-metadata-in-icecast-mp3-streams">UTF-8 metadata in Icecast MP3 streams</h2>
+<p>When sending metadata about your stream to an Icecast server in non-Latin alphabets, you may find that Icecast does not display the characters correctly for an MP3 stream, even though they are displayed correctly for an Ogg Vorbis stream. In the following screenshot, Russian characters are being displayed incorrectly in the <em>Current Song</em> field for the MP3 stream:</p>
+<p><img alt="" src="static/Screenshot223-Icecast_UTF-8_metadata.png" /></p>
+<p>The solution is to specify that the metadata for the MP3 mount point you are using should be interpreted using UTF-8 encoding. You can do this by adding the following stanza to the <em>/etc/icecast2/icecast.xml</em> file, where <em>libretime.mp3</em> is the name of your mount point:</p>
+<pre class="codehilite"><code>  &lt;mount&gt;
+       &lt;mount-name&gt;/libretime.mp3&lt;/mount-name&gt;
+       &lt;charset&gt;UTF-8&lt;/charset&gt;
+  &lt;/mount&gt;</code></pre>
+
+
+<p>After saving the <em>/etc/icecast2/icecast.xml</em> file, you should restart the Icecast server:</p>
+<pre class="codehilite"><code>sudo invoke-rc.d icecast2 restart
+Restarting icecast2: Starting icecast2
+Detaching from the console
+icecast2.</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../backing-up-the-server/" class="btn btn-neutral float-right" title="Backing Up the Server">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../smartphone-journalism/" class="btn btn-neutral" title="Smartphone Journalism"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/LibreTime/libretime/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../smartphone-journalism/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../backing-up-the-server/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

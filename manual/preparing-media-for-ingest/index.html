@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Preparing Media for Ingest - LibreTime</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../_css/term.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Preparing Media for Ingest";
+    var mkdocs_page_input_path = "manual/preparing-media-for-ingest/index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> LibreTime</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../">What is LibreTime?</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../features/">Features</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../faq/">F.A.Q.</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../rights-and-royalties/">Rights and Royalties</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Installation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../install/">Install</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preparing-the-server/">Preparing the Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../setting-the-server-time/">Setting the Server Time</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../host-configuration/">Host Configuration</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Using LibreTime</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../on-air-in-60-seconds/">On Air in 60 seconds!</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../getting-started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../tutorials/">Tutorials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">The Main Menus</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../upload/">Upload</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dashboard/">Dashboard</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../tracks/">Tracks</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../playlists/">Playlists</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../smartblocks/">Smart Blocks</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../webstreams/">Webstreams</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../podcasts/">Podcasts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../my-podcast/">My Podcast</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../radio-page/">Radio Page</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../calendar/">Calendar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../widgets/">Widgets</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Settings</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../general/">General</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../users/">Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../stream-settings/">Streams</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../status/">Status</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../listener-stats/">Analytics</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../listen/">Listen</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">The Analytics Menu</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../history/">Playout History</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../history-templates/">History Templates</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../listener-stats/">Listener Stats</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">LibreTime in the Studio</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Preparing Media for Ingest</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../live-shows-with-mixxx/">Live Shows with Mixxx</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../smartphone-journalism/">Smartphone Journalism</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../icecast-and-shoutcast/">Icecast and SHOUTcast</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Administration</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../backing-up-the-server/">Backing Up the Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../media-folders/">Media Folders</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../upgrading/">Upgrading</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Advanced Configuration</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../icecast-handover/">Icecast Handover</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../promoting-your-station/">Promoting Your Station</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../stream-player-for-your-website/">Stream Player for Your Website</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../exporting-the-schedule/">Exporting the Schedule</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface-customization/">Interface Customization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface-localization/">Interface Localization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../airtime-api-authentication/">LibreTime API Authentication</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../secure-login-with-ssl/">Secure Login with SSL or TLS</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../icecast-statistics-with-piwik/">Icecast Statistics with Piwik</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../freeipa/">FreeIPA Authentication</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Development</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../testing/">Testing</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../database/">Database</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../vagrant/">Vagrant</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../translating/">Translating</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../documentation/">Documentation</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Appendix</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../hd-audio-models/">HD Audio Models</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../about-this-manual/">About This Manual</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../uninstall/">Uninstall LibreTime</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">LibreTime</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>LibreTime in the Studio &raquo;</li>
+        
+      
+    
+    <li>Preparing Media for Ingest</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/LibreTime/libretime/edit/master/docs/manual/preparing-media-for-ingest/index.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Before uploading media to an LibreTime server, there are a number of factors which should be considered. Getting your ingest workflow right will save you a lot of time later.</p>
+<h2 id="metadata-quality">Metadata quality</h2>
+<p>LibreTime automatically imports any metadata that is in the files' ID3 tags. If these tags are incorrect or are missing information, you will have to either edit the metadata manually, or suffer the consequences. For example, if the files have creator or genre metadata missing, it will be impossible to search for, create playlists or generate smart blocks according to these criteria until you add it.</p>
+<p>There are a number of programs available which can be used to correct mistakes or incomplete information in ID3 tags. On GNU/Linux, the program <strong>Ex Falso</strong> (<a href="http://code.google.com/p/quodlibet/">http://code.google.com/p/quodlibet/</a> "http://sourceforge.net/projects/dr14tmeter/")) can be useful for batch setting and editing ID3 tags before importing files into your LibreTime server. On a Debian or Ubuntu desktop machine, you can install this program with the command:</p>
+<pre class="codehilite"><code>sudo apt-get install exfalso</code></pre>
+
+
+<p>After installation, you can run this program with the command:</p>
+<pre class="codehilite"><code>exfalso</code></pre>
+
+
+<p>or from the desktop menu. The <em>Tags From Path</em> feature of this program is a particularly useful time saver if you have a large archive of untagged files. Sometimes there is useful creator or title information in the file name or directory path structure, which can be converted into an ID3 tag automatically.</p>
+<p><img alt="" src="static/Screenshot175-Ex_Falso.png" /></p>
+<h2 id="metadata-in-legacy-character-sets">Metadata in legacy character sets</h2>
+<p>LibreTime expects file tag metadata to be stored in the international <em>UTF-8</em> character set. Programs such as <strong>Ex Falso</strong> (described above) encode metadata in UTF-8 by default. If you have an archive of files encoded with metadata in a legacy character set, such as the Cyrillic encoding <em>Windows-1251</em>, you should convert these files before import.</p>
+<p>The program <strong>mid3iconv</strong> (part of the <strong>python-mutagen</strong> package in Debian and Ubuntu) can be used to batch convert the metadata character set of files on the command line. You can install <strong>python-mutagen</strong> with the command:</p>
+<pre class="codehilite"><code>sudo apt-get install python-mutagen</code></pre>
+
+
+<p><span id="Convert_MP3_Tags_using_mid3iconv" class="mw-headline"> For example, to preview the conversion of tags from Windows-1251 </span><span id="Convert_MP3_Tags_using_mid3iconv" class="mw-headline">(CP1251)</span><span id="Convert_MP3_Tags_using_mid3iconv" class="mw-headline"> character set to UTF-8 for a whole archive of MP3 files, you could use the command: </span></p>
+<pre class="codehilite"><code>find . -name &quot;*.mp3&quot; -print0 | xargs -0 mid3iconv -e CP1251 -d -p</code></pre>
+
+
+<p>in the base directory of the archive. The <strong>-d</strong> option specifies that the new tag should be printed to the server console (debug mode), and the <strong>-p</strong> option specifies a preview run. This preview will enable you to confirm that the metadata is being read and converted correctly before writing the new tags.</p>
+<p>To actually convert all of the tags and strip any legacy ID3v1 tag present from each file at the same time, you could use the command:</p>
+<pre class="codehilite"><code>find . -name &quot;*.mp3&quot; -print0 | xargs -0 mid3iconv -e CP1251 --remove-v1</code></pre>
+
+
+<p>The name of the original character set follows the <strong>-e</strong> option. Other legacy character sets that mid3iconv can convert to UTF-8 include:</p>
+<p>KOI8-R: Russian
+KOI8-U: Ukrainian</p>
+<p>GBK: Traditional Chinese
+GB2312: Simplified Chinese</p>
+<p>EUC-KR: Korean
+EUC-JP: Japanese</p>
+<p>CP1253: Greek
+CP1254: Turkish
+CP1255: Hebrew
+CP1256: Arabic</p>
+<h2 id="audio-loudness">Audio loudness</h2>
+<p>On file ingest, LibreTime analyzes each Ogg Vorbis, MP3, AAC or FLAC file's loudness, and stores a <em>ReplayGain</em> value for that file in its database. At playout time, the ReplayGain value is provided to Liquidsoap so that gain can be automatically adjusted to provide an average output of -14 dBFS loudness (14 decibels below full scale). See <a href="http://www.replaygain.org/">http://www.replaygain.org/</a> for more details of ReplayGain.</p>
+<p>Because of this automatic gain adjustment, any files with average loudness higher than -14 dBFS will not sound louder than quieter files at playout time, but the lower crest factor in the louder files (their relatively low peak-to-average ratio) may be apparent in the output, making those files sound less dynamic. This may be an issue for contemporary popular music, which can average at -9 dBFS or louder before ReplayGain adjustment. (See <a href="http://www.soundonsound.com/sos/sep11/articles/loudness.htm">http://www.soundonsound.com/sos/sep11/articles/loudness.htm</a> for a detailed analysis of the problem).</p>
+<p>Your station's producers should therefore aim for 14dB between peak and average loudness to maintain the crest factor of their prepared material (also known as <em>DR14</em> on some dynamic range meters, such as the command-line DR14 T.meter available from <a href="http://sourceforge.net/projects/dr14tmeter/">http://sourceforge.net/projects/dr14tmeter/</a>). If the producers are working to a different loudness standard, the ReplayGain modifier in LibreTime's Stream Settings page can be adjusted to suit their material.</p>
+<p>Large transient peaks in otherwise quiet files should be avoided, to guard against the need for peak limiting when ReplayGain is applied to those quieter files.</p>
+<p>The <strong>vorbisgain</strong> command-line tool, available in the <strong>vorbisgain</strong> package in Debian/Ubuntu, can be used to indicate the ReplayGain of an individual Ogg Vorbis file before ingest into LibreTime. (A similar tool for MP3 files is available in the <strong>mp3gain</strong> package in Debian/Ubuntu).</p>
+<p>Here is an example of a very quiet file where the use of ReplayGain would make the output more than 17dB louder:</p>
+<pre class="codehilite"><code>$ vorbisgain -d Peter_Lawson-Three_Gymn.ogg
+Analyzing files...
+
+   Gain   | Peak | Scale | New Peak | Track
+----------+------+-------+----------+------
++17.39 dB | 4536 |  7.40 |    33585 | Peter_Lawson-Three_Gymn.ogg</code></pre>
+
+
+<p>And here is an example of a very loud file, with lower crest factor, where the output will be more than 7dB quieter with ReplayGain applied:</p>
+<pre class="codehilite"><code>$ vorbisgain -d Snoop_Dogg-Doggfather.ogg
+Analyzing files...
+
+   Gain   | Peak  | Scale | New Peak | Track
+----------+-------+-------+----------+------
+ -7.86 dB | 36592 |  0.40 |    14804 | Snoop_Dogg-Doggfather.ogg</code></pre>
+
+
+<p>In the output from vorbisgain, <em>Peak</em> is the maximum sample value of the file before any ReplayGain has been applied, where a value of 32,767 represents full scale when decoding to signed 16 bit samples. Note that lossy compressed files can have peaks greater than full scale, due to encoding artifacts. The <em>New Peak</em> value for the Snoop Dogg file may be relatively low due to the hard limiting used in the mastering of that piece of music.</p>
+<h2 id="silence-in-media-files">Silence in media files</h2>
+<p>Before importing media, it is good practice to check for any silent sections in the media files. While LibreTime compensates for leading and trailing silence with the use of automatic cue-in and cue-out points<strong><em>*, it may be preferable to trim these files to the intended length before upload. This is because media in the LibreTime library could potentially be re-used in many different systems. </em>*Audacity</strong> is a cross-platform editor suitable for the task of trimming audio files, available from <a href="http://audacity.sourceforge.net" title="http://sourceforge.net/projects/dr14tmeter/">http://audacity.sourceforge.net/</a></p>
+<p>Very quiet introductions or over-long fades can also lead to apparent gaps in your broadcast playout. Some audio CDs feature a 'hidden track' at the end, which in fact uses a long period of silence within the final track, rather than an actual separate track on the disc. This means that CD encoding programs will often encode both the hidden material and the silence in the media file. For example, the track <em>Debra</em> from the CD <em>Midnite Vultures</em> by <em>Beck</em> includes hidden material preceded by seven minutes of silence, as shown in the screen shot from Audacity below.</p>
+<p><img alt="" src="static/Screenshot126-Debra_silence.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../live-shows-with-mixxx/" class="btn btn-neutral float-right" title="Live Shows with Mixxx">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../listener-stats/" class="btn btn-neutral" title="Listener Stats"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/LibreTime/libretime/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../listener-stats/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../live-shows-with-mixxx/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
