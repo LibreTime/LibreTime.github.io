@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://libretime.github.io/pr-1939/blog</id>
+    <title>LibreTime Blog</title>
+    <updated>2022-08-01T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://libretime.github.io/pr-1939/blog"/>
+    <subtitle>LibreTime Blog</subtitle>
+    <icon>https://libretime.github.io/pr-1939/img/icon.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[LibreTime v3.0.0-beta.0, finally!]]></title>
+        <id>/2022/08/01/libretime-v3-beta.0</id>
+        <link href="https://libretime.github.io/pr-1939/blog/2022/08/01/libretime-v3-beta.0"/>
+        <updated>2022-08-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Entering v3 beta release phase.]]></summary>
+        <content type="html"><![CDATA[<p>Hello 📻 friends !</p><p>We reached the point were we can now release a v3.0.0-beta.0, finally 🚀!</p><p>By the way, this is our very first blog post 🎉, and they should be as irregular as LibreTime releases! We changed from the monthly community meetings to something less timezone sensitive.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-did-we-get-here--what-changed-">How did we get here ? What changed ?<a class="hash-link" href="#how-did-we-get-here--what-changed-" title="Direct link to heading">​</a></h2><ul><li>What didn't get implemented from airtime ?</li></ul><p>A lot of work has been made to clean and modernize parts of LibreTime that really need it. Some of those parts are base block on which many other pars rely on so we had to finalize it before moving forward.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="beta0-now-what-">Beta.0, now what ?<a class="hash-link" href="#beta0-now-what-" title="Direct link to heading">​</a></h2><ul><li>Please test ! A lot of tests !</li><li>3/4 weeks between beta releases until we reach the stability for v3.0.0</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="and-what-happen-once-v3-is-release-">And what happen once v3 is release ?<a class="hash-link" href="#and-what-happen-once-v3-is-release-" title="Direct link to heading">​</a></h2><ul><li><p>Keep a stable branch for bugfixes and cut 3.0.x version.</p></li><li><p>Develop on the main branch for 3.1.0.</p></li><li><p>Work on the API and frontend</p></li><li><p>Rework playout</p></li><li><p>Airtime users has to install LibreTime <code>v3.0.*</code> before installing newer versions.</p></li></ul>]]></content>
+        <author>
+            <name>Jonas</name>
+            <uri>https://github.com/jooola</uri>
+        </author>
+        <category label="release" term="release"/>
+    </entry>
+</feed>

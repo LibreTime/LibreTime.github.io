@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>LibreTime Blog</title>
+        <link>https://libretime.github.io/pr-1939/blog</link>
+        <description>LibreTime Blog</description>
+        <lastBuildDate>Mon, 01 Aug 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[LibreTime v3.0.0-beta.0, finally!]]></title>
+            <link>https://libretime.github.io/pr-1939/blog/2022/08/01/libretime-v3-beta.0</link>
+            <guid>/2022/08/01/libretime-v3-beta.0</guid>
+            <pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Entering v3 beta release phase.]]></description>
+            <content:encoded><![CDATA[<p>Hello 📻 friends !</p><p>We reached the point were we can now release a v3.0.0-beta.0, finally 🚀!</p><p>By the way, this is our very first blog post 🎉, and they should be as irregular as LibreTime releases! We changed from the monthly community meetings to something less timezone sensitive.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-did-we-get-here--what-changed-">How did we get here ? What changed ?<a class="hash-link" href="#how-did-we-get-here--what-changed-" title="Direct link to heading">​</a></h2><ul><li>What didn't get implemented from airtime ?</li></ul><p>A lot of work has been made to clean and modernize parts of LibreTime that really need it. Some of those parts are base block on which many other pars rely on so we had to finalize it before moving forward.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="beta0-now-what-">Beta.0, now what ?<a class="hash-link" href="#beta0-now-what-" title="Direct link to heading">​</a></h2><ul><li>Please test ! A lot of tests !</li><li>3/4 weeks between beta releases until we reach the stability for v3.0.0</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="and-what-happen-once-v3-is-release-">And what happen once v3 is release ?<a class="hash-link" href="#and-what-happen-once-v3-is-release-" title="Direct link to heading">​</a></h2><ul><li><p>Keep a stable branch for bugfixes and cut 3.0.x version.</p></li><li><p>Develop on the main branch for 3.1.0.</p></li><li><p>Work on the API and frontend</p></li><li><p>Rework playout</p></li><li><p>Airtime users has to install LibreTime <code>v3.0.*</code> before installing newer versions.</p></li></ul>]]></content:encoded>
+            <category>release</category>
+        </item>
+    </channel>
+</rss>
