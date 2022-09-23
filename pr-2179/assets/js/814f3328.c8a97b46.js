@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"LibreTime 3.0.0 beta.0, finally!","permalink":"/pr-2179/blog/2022/09/17/libretime-v3-beta.0"}]}')}}]);
